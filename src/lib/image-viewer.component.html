@@ -1,0 +1,7 @@
+<div [ngxToggleFullscreen]="fullscreen" [ngStyle]="config.containerStyle" class="img-container"
+    (wheel)="scrollZoom($event)" (dragover)="onDragOver($event)">
+    <img [src]="src[index]" (error)="onError(index)" [ngStyle]="style" alt="Image not found..." (dragstart)="onDragStart($event)" (load)="onLoad()" (loadstart)="onLoadStart()"/>
+  <!-- Div below will be used to hide the 'ghost' image when dragging -->
+  <div></div>
+  <ng-content></ng-content> <!-- Used to capture any content that you want to add to this module (To support full screen elements)-->
+</div>
