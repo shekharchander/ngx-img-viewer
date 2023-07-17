@@ -1,6 +1,6 @@
 {
   "name": "ngx-img-viewer",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "A configurable Angular image viewing library, compatible with Angular 13+",
   "author": "shekharchander",
   "peerDependencies": {
@@ -9,11 +9,6 @@
     "@angular-devkit/build-angular": ">=13.0.0",
     "@angular/platform-browser": ">=13.0.0",
     "@angular/platform-browser-dynamic": ">=13.0.0"
-  },
-  "scripts": {
-    "ng": "ng",
-    "build": "ng build",
-    "test": "ng test"
   },
   "repository": {
     "type": "git",
@@ -39,22 +34,20 @@
     "screenfull": "^6.0.2",
     "heic2any": "^0.0.4"
   },
-  "devDependencies": {
-    "@angular-devkit/build-angular": ">=13.0.0",
-    "@angular/cli": ">=13.0.0",
-    "@angular/compiler-cli": ">=13.0.0",
-    "@types/jasmine": "~4.0.0",
-    "jasmine-core": "~4.3.0",
-    "karma": "~6.4.0",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage": "~2.2.0",
-    "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.0.0",
-    "ng-packagr": ">=13.0.0",
-    "typescript": ">=4.0.0",
-    "@angular/platform-browser": ">=13.0.0",
-    "@angular/platform-browser-dynamic": ">=13.0.0"
-  },
   "homepage": "https://github.com/shekharchander/ngx-img-viewer#readme",
-  "main": "karma.conf.js"
+  "main": "karma.conf.js",
+  "module": "fesm2022/ngx-img-viewer.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/ngx-img-viewer.mjs",
+      "esm": "./esm2022/ngx-img-viewer.mjs",
+      "default": "./fesm2022/ngx-img-viewer.mjs"
+    }
+  },
+  "sideEffects": false
 }
