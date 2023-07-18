@@ -1,20 +1,22 @@
 import {Component, OnInit, Input, Optional, Inject, Output, EventEmitter, HostListener, SecurityContext } from '@angular/core';
-import { ImageViewerConfig, CustomEvent } from './image-viewer-config.model';
+import { ImageViewerConfig, CustomEvent } from './ngx-img-viewer-config.model';
 import heic2any from 'heic2any';
 import { DomSanitizer } from '@angular/platform-browser';
 
 const DEFAULT_CONFIG: ImageViewerConfig = {
   zoomFactor: 0.1,
-  containerBackgroundColor: '#ccc',
+  containerStyle: {
+    'background-color':'#ccc'
+  },
   wheelZoom: false,
   allowFullscreen: true,
   allowKeyboardNavigation: true,
 };
 
 @Component({
-  selector: 'ngx-image-preview',
-  templateUrl: './image-viewer.component.html',
-  styleUrls: ['./image-viewer.component.scss']
+  selector: 'ngx-img-viewer',
+  templateUrl: './ngx-img-viewer.component.html',
+  styleUrls: ['./ngx-img-viewer.component.scss']
 })
 export class ImageViewerComponent implements OnInit {
 
@@ -25,7 +27,11 @@ export class ImageViewerComponent implements OnInit {
   index = 0;
 
   @Input()
-  config: ImageViewerConfig = {};
+  config: ImageViewerConfig = {
+    containerStyle: {
+      'background-color':'#ccc'
+    }
+  }
 
   @Output()
   indexChange: EventEmitter<number> = new EventEmitter();

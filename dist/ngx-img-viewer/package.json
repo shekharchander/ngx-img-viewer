@@ -1,52 +1,32 @@
 {
   "name": "ngx-img-viewer",
-  "version": "0.0.1",
-  "description": "A configurable Angular image viewing library, compatible with Angular 13+",
-  "author": "shekharchander",
+  "version": "13.0.0",
   "peerDependencies": {
-    "@angular/common": ">=13.0.0",
-    "@angular/core": ">=13.0.0",
-    "@angular-devkit/build-angular": ">=13.0.0",
-    "@angular/platform-browser": ">=13.0.0",
-    "@angular/platform-browser-dynamic": ">=13.0.0"
+    "@angular/common": "^13.3.0",
+    "@angular/core": "^13.3.0",
+    "heic2any": "^0.0.4",
+    "screenfull": "^6.0.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shekharchander/ngx-img-viewer.git"
-  },
-  "bugs": {
-    "url": "https://github.com/shekharchander/ngx-img-viewer/issues"
-  },
-  "keywords": [
-    "angular image preview",
-    "ng image viewer",
-    "angular image viewer",
-    "image viewer",
-    "heic preview",
-    "heic image viewer",
-    "img-viewer",
-    "ngx-img-viewer"
-  ],
-  "license": "MIT",
-  "private": false,
   "dependencies": {
-    "tslib": "^2.3.0",
-    "screenfull": "^6.0.2",
-    "heic2any": "^0.0.4"
+    "tslib": "^2.3.0"
   },
-  "homepage": "https://github.com/shekharchander/ngx-img-viewer#readme",
-  "main": "karma.conf.js",
-  "module": "fesm2022/ngx-img-viewer.mjs",
-  "typings": "index.d.ts",
+  "module": "fesm2015/ngx-img-viewer.mjs",
+  "es2020": "fesm2020/ngx-img-viewer.mjs",
+  "esm2020": "esm2020/ngx-img-viewer.mjs",
+  "fesm2020": "fesm2020/ngx-img-viewer.mjs",
+  "fesm2015": "fesm2015/ngx-img-viewer.mjs",
+  "typings": "ngx-img-viewer.d.ts",
   "exports": {
     "./package.json": {
       "default": "./package.json"
     },
     ".": {
-      "types": "./index.d.ts",
-      "esm2022": "./esm2022/ngx-img-viewer.mjs",
-      "esm": "./esm2022/ngx-img-viewer.mjs",
-      "default": "./fesm2022/ngx-img-viewer.mjs"
+      "types": "./ngx-img-viewer.d.ts",
+      "esm2020": "./esm2020/ngx-img-viewer.mjs",
+      "es2020": "./fesm2020/ngx-img-viewer.mjs",
+      "es2015": "./fesm2015/ngx-img-viewer.mjs",
+      "node": "./fesm2015/ngx-img-viewer.mjs",
+      "default": "./fesm2020/ngx-img-viewer.mjs"
     }
   },
   "sideEffects": false

@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ImageViewerService } from './image-viewer.service';
+import { ImageViewerService } from './ngx-img-viewer.service';
 
 describe('ImageViewerService', () => {
   let service: ImageViewerService;

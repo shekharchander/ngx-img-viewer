@@ -1,9 +1,8 @@
 export interface ImageViewerConfig {
     zoomFactor?: number;
-    containerBackgroundColor?: string;
     wheelZoom?: boolean;
     allowFullscreen?: boolean;
-    containerStyle?: {};
+    containerStyle: {};
     imgStyle?: {};
     allowKeyboardNavigation?: boolean;
     customBtns?: Array<

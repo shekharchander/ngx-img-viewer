@@ -1,7 +1,7 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ImageViewerComponent } from './image-viewer.component';
-import { ImageViewerConfig } from './image-viewer-config.model';
+import { ImageViewerComponent } from './ngx-img-viewer.component';
+import { ImageViewerConfig } from './ngx-img-viewer-config.model';
 import { ToggleFullscreenDirective } from './fullscreen.directive';
 @NgModule({
   imports: [
