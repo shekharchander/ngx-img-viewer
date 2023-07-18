@@ -6,5 +6,5 @@ export declare class ToggleFullscreenDirective implements OnChanges {
     constructor(el: ElementRef);
     ngOnChanges(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<ToggleFullscreenDirective, never>;
-    static ɵdir: i0.ɵɵDirectiveDeclaration<ToggleFullscreenDirective, "[ngxToggleFullscreen]", never, { "isFullscreen": "ngxToggleFullscreen"; }, {}, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<ToggleFullscreenDirective, "[ngxToggleFullscreen]", never, { "isFullscreen": "ngxToggleFullscreen"; }, {}, never, never, false>;
 }
