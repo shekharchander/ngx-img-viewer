@@ -1,13 +1,14 @@
 {
   "name": "ngx-img-viewer",
-  "version": "14.0.0",
+  "version": "15.0.0",
   "peerDependencies": {
-    "@angular/common": "^14.2.0",
-    "@angular/core": "^14.2.0",
+    "@angular/common": "^15.2.0",
+    "@angular/core": "^15.2.0",
     "heic2any": "^0.0.4",
     "screenfull": "^6.0.2"
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  }
+  },
+  "sideEffects": false
 }

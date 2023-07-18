@@ -50,5 +50,5 @@ export declare class ImageViewerComponent implements OnInit {
     private updateStyle;
     private mergeConfig;
     static ɵfac: i0.ɵɵFactoryDeclaration<ImageViewerComponent, [{ optional: true; }, null]>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<ImageViewerComponent, "ngx-img-viewer", never, { "src": "src"; "index": "index"; "config": "config"; }, { "src": "src"; "indexChange": "indexChange"; "configChange": "configChange"; "customEvent": "customEvent"; }, never, ["*"], false>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ImageViewerComponent, "ngx-img-viewer", never, { "src": "src"; "index": "index"; "config": "config"; }, { "src": "src"; "indexChange": "indexChange"; "configChange": "configChange"; "customEvent": "customEvent"; }, never, ["*"], false, never>;
 }

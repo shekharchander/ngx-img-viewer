@@ -9,9 +9,9 @@ import * as screenfull from 'screenfull';
 class ImageViewerService {
     constructor() { }
 }
-ImageViewerService.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.3.0", ngImport: i0, type: ImageViewerService, deps: [], target: i0.ɵɵFactoryTarget.Injectable });
-ImageViewerService.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "14.3.0", ngImport: i0, type: ImageViewerService, providedIn: 'root' });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.3.0", ngImport: i0, type: ImageViewerService, decorators: [{
+ImageViewerService.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "15.2.9", ngImport: i0, type: ImageViewerService, deps: [], target: i0.ɵɵFactoryTarget.Injectable });
+ImageViewerService.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "15.2.9", ngImport: i0, type: ImageViewerService, providedIn: 'root' });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "15.2.9", ngImport: i0, type: ImageViewerService, decorators: [{
             type: Injectable,
             args: [{
                     providedIn: 'root'
@@ -38,9 +38,9 @@ class ToggleFullscreenDirective {
         }
     }
 }
-ToggleFullscreenDirective.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.3.0", ngImport: i0, type: ToggleFullscreenDirective, deps: [{ token: i0.ElementRef }], target: i0.ɵɵFactoryTarget.Directive });
-ToggleFullscreenDirective.ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "14.3.0", type: ToggleFullscreenDirective, selector: "[ngxToggleFullscreen]", inputs: { isFullscreen: ["ngxToggleFullscreen", "isFullscreen"] }, usesOnChanges: true, ngImport: i0 });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.3.0", ngImport: i0, type: ToggleFullscreenDirective, decorators: [{
+ToggleFullscreenDirective.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "15.2.9", ngImport: i0, type: ToggleFullscreenDirective, deps: [{ token: i0.ElementRef }], target: i0.ɵɵFactoryTarget.Directive });
+ToggleFullscreenDirective.ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "15.2.9", type: ToggleFullscreenDirective, selector: "[ngxToggleFullscreen]", inputs: { isFullscreen: ["ngxToggleFullscreen", "isFullscreen"] }, usesOnChanges: true, ngImport: i0 });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "15.2.9", ngImport: i0, type: ToggleFullscreenDirective, decorators: [{
             type: Directive,
             args: [{
                     selector: '[ngxToggleFullscreen]'
@@ -262,9 +262,9 @@ class ImageViewerComponent {
         return result;
     }
 }
-ImageViewerComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.3.0", ngImport: i0, type: ImageViewerComponent, deps: [{ token: 'config', optional: true }, { token: i1.DomSanitizer }], target: i0.ɵɵFactoryTarget.Component });
-ImageViewerComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "14.3.0", type: ImageViewerComponent, selector: "ngx-img-viewer", inputs: { src: "src", index: "index", config: "config" }, outputs: { src: "src", indexChange: "indexChange", configChange: "configChange", customEvent: "customEvent" }, host: { listeners: { "mouseover": "onMouseOver()", "mouseleave": "onMouseLeave()" } }, ngImport: i0, template: "<div [ngxToggleFullscreen]=\"fullscreen\" [ngStyle]=\"config.containerStyle\" class=\"img-container\"\r\n    (wheel)=\"scrollZoom($event)\" (dragover)=\"onDragOver($event)\">\r\n    <img [src]=\"src[index]\" (error)=\"onError(index)\" [ngStyle]=\"style\" alt=\"Image not found...\" (dragstart)=\"onDragStart($event)\" (load)=\"onLoad()\" (loadstart)=\"onLoadStart()\"/>\r\n  <!-- Div below will be used to hide the 'ghost' image when dragging -->\r\n  <div></div>\r\n  <ng-content></ng-content> <!-- Used to capture any content that you want to add to this module (To support full screen elements)-->\r\n</div>", styles: [".img-container{height:100%;width:100%;overflow:hidden;position:relative}.img-container img{z-index:2;margin:0 auto;display:block;max-width:100%;max-height:100%}@keyframes rotation{0%{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(359deg)}}\n"], dependencies: [{ kind: "directive", type: i2.NgStyle, selector: "[ngStyle]", inputs: ["ngStyle"] }, { kind: "directive", type: ToggleFullscreenDirective, selector: "[ngxToggleFullscreen]", inputs: ["ngxToggleFullscreen"] }] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.3.0", ngImport: i0, type: ImageViewerComponent, decorators: [{
+ImageViewerComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "15.2.9", ngImport: i0, type: ImageViewerComponent, deps: [{ token: 'config', optional: true }, { token: i1.DomSanitizer }], target: i0.ɵɵFactoryTarget.Component });
+ImageViewerComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "15.2.9", type: ImageViewerComponent, selector: "ngx-img-viewer", inputs: { src: "src", index: "index", config: "config" }, outputs: { src: "src", indexChange: "indexChange", configChange: "configChange", customEvent: "customEvent" }, host: { listeners: { "mouseover": "onMouseOver()", "mouseleave": "onMouseLeave()" } }, ngImport: i0, template: "<div [ngxToggleFullscreen]=\"fullscreen\" [ngStyle]=\"config.containerStyle\" class=\"img-container\"\r\n    (wheel)=\"scrollZoom($event)\" (dragover)=\"onDragOver($event)\">\r\n    <img [src]=\"src[index]\" (error)=\"onError(index)\" [ngStyle]=\"style\" alt=\"Image not found...\" (dragstart)=\"onDragStart($event)\" (load)=\"onLoad()\" (loadstart)=\"onLoadStart()\"/>\r\n  <!-- Div below will be used to hide the 'ghost' image when dragging -->\r\n  <div></div>\r\n  <ng-content></ng-content> <!-- Used to capture any content that you want to add to this module (To support full screen elements)-->\r\n</div>", styles: [".img-container{height:100%;width:100%;overflow:hidden;position:relative}.img-container img{z-index:2;margin:0 auto;display:block;max-width:100%;max-height:100%}@keyframes rotation{0%{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(359deg)}}\n"], dependencies: [{ kind: "directive", type: i2.NgStyle, selector: "[ngStyle]", inputs: ["ngStyle"] }, { kind: "directive", type: ToggleFullscreenDirective, selector: "[ngxToggleFullscreen]", inputs: ["ngxToggleFullscreen"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "15.2.9", ngImport: i0, type: ImageViewerComponent, decorators: [{
             type: Component,
             args: [{ selector: 'ngx-img-viewer', template: "<div [ngxToggleFullscreen]=\"fullscreen\" [ngStyle]=\"config.containerStyle\" class=\"img-container\"\r\n    (wheel)=\"scrollZoom($event)\" (dragover)=\"onDragOver($event)\">\r\n    <img [src]=\"src[index]\" (error)=\"onError(index)\" [ngStyle]=\"style\" alt=\"Image not found...\" (dragstart)=\"onDragStart($event)\" (load)=\"onLoad()\" (loadstart)=\"onLoadStart()\"/>\r\n  <!-- Div below will be used to hide the 'ghost' image when dragging -->\r\n  <div></div>\r\n  <ng-content></ng-content> <!-- Used to capture any content that you want to add to this module (To support full screen elements)-->\r\n</div>", styles: [".img-container{height:100%;width:100%;overflow:hidden;position:relative}.img-container img{z-index:2;margin:0 auto;display:block;max-width:100%;max-height:100%}@keyframes rotation{0%{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(359deg)}}\n"] }]
         }], ctorParameters: function () {
@@ -304,11 +304,11 @@ class ImageViewerModule {
         };
     }
 }
-ImageViewerModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "14.3.0", ngImport: i0, type: ImageViewerModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
-ImageViewerModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "14.3.0", ngImport: i0, type: ImageViewerModule, declarations: [ImageViewerComponent,
+ImageViewerModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "15.2.9", ngImport: i0, type: ImageViewerModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
+ImageViewerModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "15.2.9", ngImport: i0, type: ImageViewerModule, declarations: [ImageViewerComponent,
         ToggleFullscreenDirective], imports: [CommonModule], exports: [ImageViewerComponent] });
-ImageViewerModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "14.3.0", ngImport: i0, type: ImageViewerModule, imports: [CommonModule] });
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "14.3.0", ngImport: i0, type: ImageViewerModule, decorators: [{
+ImageViewerModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "15.2.9", ngImport: i0, type: ImageViewerModule, imports: [CommonModule] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "15.2.9", ngImport: i0, type: ImageViewerModule, decorators: [{
             type: NgModule,
             args: [{
                     imports: [
